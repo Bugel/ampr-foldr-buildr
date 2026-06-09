@@ -5,13 +5,13 @@ Builds ShadowMount backport folders for ampr_emu. It reads the game list from ht
 ## Run
 
 ```bat
-ampr-foldr-buildr.cmd -AprSource "C:\path\to\ampr_emu_0.2b"
+ampr-foldr-buildr.cmd -AprSource "C:\path\to\ampr_emu"
 ```
 
 Working titles only:
 
 ```bat
-ampr-foldr-buildr.cmd -AprSource "C:\path\to\ampr_emu_0.2b" -Status Working
+ampr-foldr-buildr.cmd -AprSource "C:\path\to\ampr_emu" -Status Working
 ```
 
 If PowerShell blocks scripts, use the `.cmd` file above. It does not change your execution policy.
@@ -35,3 +35,8 @@ ShadowMount uses:
 ```
 
 Only games with a folder get the fakelib. Other games are not affected.
+
+
+Set the following settings in /data/shadowmount/config.ini
+backport_fakelib=1
+global_fakelib=0
